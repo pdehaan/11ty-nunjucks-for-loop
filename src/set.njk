@@ -1,0 +1,16 @@
+---
+title: Nunjucks for..in w/ Set
+date: 2021-03-01
+---
+
+<p>Looping over a JavaScript <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Set" target="_blank">Set</a> instance behaves similar to an <a href="{{ '/array/' | url }}">Array</a>.</p>
+
+<h2>INPUT</h2>
+<pre>{{ set | inspect }}</pre>
+
+<h2>OUTPUT</h2>
+<ul>
+{%- for value in set %}
+  <li>{{ value }}</li>
+{%- endfor %}
+</ul>

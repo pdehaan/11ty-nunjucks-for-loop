@@ -1,0 +1,10 @@
+---
+title: Nunjucks for..in loops
+eleventyExcludeFromCollections: true
+---
+
+<ul>
+  {% for p in collections.all %}
+    <li><a href="{{ p.url | url }}">{{ p.data.title }}</a></li>
+  {% endfor %}
+</ul>

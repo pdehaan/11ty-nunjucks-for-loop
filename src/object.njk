@@ -1,0 +1,14 @@
+---
+title: Nunjucks for..in w/ Object
+date: 2021-02-01
+---
+
+<h2>INPUT</h2>
+<pre>{{ object | inspect }}</pre>
+
+<h2>OUTPUT</h2>
+<ul>
+{%- for key, value in object %}
+  <li>{{ key }} => {{ value }}</li>
+{%- endfor %}
+</ul>

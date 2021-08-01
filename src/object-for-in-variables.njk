@@ -1,0 +1,20 @@
+---
+title: Nunjucks for..in w/ Object and loop.* variables
+date: 2021-02-02
+---
+
+<h2>INPUT</h2>
+<pre>{{ object | inspect }}</pre>
+
+<h2>OUTPUT</h2>
+<ul>
+{% for key, value in object %}
+  <li>
+    [{{ loop.index }} of {{ loop.length }}] {{ key }} => {{ value }}
+    <pre>{{ loop | inspect }}</pre>
+    {% if not loop.last %}
+      <hr/>
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>

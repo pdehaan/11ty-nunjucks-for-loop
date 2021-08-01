@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Nunjucks for..in w/ Array and loop.* variables</title>
+  </head>
+  <body>
+    <header>
+      <h1>Nunjucks for..in w/ Array and loop.* variables</h1>
+    </header>
+    <article>
+      <h2>INPUT</h2>
+      <pre>
+[
+  &#39;one&#39;,   &#39;TWO&#39;,
+  &#39;three&#39;, &#39;FOUR&#39;,
+  &#39;five&#39;,  &#39;SIX&#39;,
+  &#39;seven&#39;, &#39;EIGHT&#39;,
+  &#39;nine&#39;
+]</pre
+      >
+
+      <h2>OUTPUT</h2>
+      <ul>
+        <li>
+          [1 of 9] one
+          <pre>
+{
+  index: 1,
+  index0: 0,
+  revindex: 9,
+  revindex0: 8,
+  first: true,
+  last: false,
+  length: 9
+}</pre
+          >
+
+          <hr />
+        </li>
+
+        <li>
+          [2 of 9] TWO
+          <pre>
+{
+  index: 2,
+  index0: 1,
+  revindex: 8,
+  revindex0: 7,
+  first: false,
+  last: false,
+  length: 9
+}</pre
+          >
+
+          <hr />
+        </li>
+
+        <li>
+          [3 of 9] three
+          <pre>
+{
+  index: 3,
+  index0: 2,
+  revindex: 7,
+  revindex0: 6,
+  first: false,
+  last: false,
+  length: 9
+}</pre
+          >
+
+          <hr />
+        </li>
+
+        <li>
+          [4 of 9] FOUR
+          <pre>
+{
+  index: 4,
+  index0: 3,
+  revindex: 6,
+  revindex0: 5,
+  first: false,
+  last: false,
+  length: 9
+}</pre
+          >
+
+          <hr />
+        </li>
+
+        <li>
+          [5 of 9] five
+          <pre>
+{
+  index: 5,
+  index0: 4,
+  revindex: 5,
+  revindex0: 4,
+  first: false,
+  last: false,
+  length: 9
+}</pre
+          >
+
+          <hr />
+        </li>
+
+        <li>
+          [6 of 9] SIX
+          <pre>
+{
+  index: 6,
+  index0: 5,
+  revindex: 4,
+  revindex0: 3,
+  first: false,
+  last: false,
+  length: 9
+}</pre
+          >
+
+          <hr />
+        </li>
+
+        <li>
+          [7 of 9] seven
+          <pre>
+{
+  index: 7,
+  index0: 6,
+  revindex: 3,
+  revindex0: 2,
+  first: false,
+  last: false,
+  length: 9
+}</pre
+          >
+
+          <hr />
+        </li>
+
+        <li>
+          [8 of 9] EIGHT
+          <pre>
+{
+  index: 8,
+  index0: 7,
+  revindex: 2,
+  revindex0: 1,
+  first: false,
+  last: false,
+  length: 9
+}</pre
+          >
+
+          <hr />
+        </li>
+
+        <li>
+          [9 of 9] nine
+          <pre>
+{
+  index: 9,
+  index0: 8,
+  revindex: 1,
+  revindex0: 0,
+  first: false,
+  last: true,
+  length: 9
+}</pre
+          >
+        </li>
+      </ul>
+    </article>
+  </body>
+</html>

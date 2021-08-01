@@ -1,0 +1,19 @@
+---
+title: Nunjucks for..in w/ Array and loop.* variables
+date: 2021-01-03
+---
+
+<h2>INPUT</h2>
+<pre>{{ array | inspect }}</pre>
+
+<h2>OUTPUT</h2>
+<ul>
+{% for value in array %}
+  <li>[{{ loop.index }} of {{ loop.length }}] {{ value }}
+  <pre>{{ loop | inspect }}</pre>
+  {% if not loop.last %}
+    <hr/>
+  {% endif %}
+  </li>
+{% endfor %}
+</ul>

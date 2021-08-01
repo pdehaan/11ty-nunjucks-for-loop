@@ -1,0 +1,14 @@
+---
+title: Nunjucks for..in w/ Array
+date: 2021-01-01
+---
+
+<h2>INPUT</h2>
+<pre>{{ array | inspect }}</pre>
+
+<h2>OUTPUT</h2>
+<ul>
+{%- for value in array %}
+  <li>{{ value }}</li>
+{%- endfor %}
+</ul>

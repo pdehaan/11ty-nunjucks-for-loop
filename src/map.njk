@@ -1,0 +1,16 @@
+---
+title: Nunjucks for..in w/ Map
+date: 2021-04-01
+---
+
+<p>Looping over a JavaScript <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Map" target="_blank">Map</a> instance behaves similar to an <a href="{{ '/object/' | url }}">Object</a>.</p>
+
+<h2>INPUT</h2>
+<pre>{{ map | inspect }}</pre>
+
+<h2>OUTPUT</h2>
+<ul>
+{%- for key, value in map %}
+  <li>{{ key }} => {{ value }}</li>
+{%- endfor %}
+</ul>

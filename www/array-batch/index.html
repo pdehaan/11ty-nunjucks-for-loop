@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Nunjucks for..in w/ Array and `batch` filter</title>
+  </head>
+  <body>
+    <header>
+      <h1>Nunjucks for..in w/ Array and `batch` filter</h1>
+    </header>
+    <article>
+      <h2>INPUT</h2>
+      <pre>
+[
+  &#39;one&#39;,   &#39;TWO&#39;,
+  &#39;three&#39;, &#39;FOUR&#39;,
+  &#39;five&#39;,  &#39;SIX&#39;,
+  &#39;seven&#39;, &#39;EIGHT&#39;,
+  &#39;nine&#39;
+]</pre
+      >
+
+      <h2>OUTPUT</h2>
+      <ul>
+        <li>[ 'one', 'TWO' ]</li>
+        <li>[ 'three', 'FOUR' ]</li>
+        <li>[ 'five', 'SIX' ]</li>
+        <li>[ 'seven', 'EIGHT' ]</li>
+        <li>[ 'nine' ]</li>
+      </ul>
+    </article>
+  </body>
+</html>

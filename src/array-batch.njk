@@ -1,0 +1,14 @@
+---
+title: Nunjucks for..in w/ Array and `batch` filter
+date: 2021-01-02
+---
+
+<h2>INPUT</h2>
+<pre>{{ array | inspect }}</pre>
+
+<h2>OUTPUT</h2>
+<ul>
+{%- for values in array | batch(2) %}
+  <li>{{ values | inspect | safe }}</li>
+{%- endfor %}
+</ul>

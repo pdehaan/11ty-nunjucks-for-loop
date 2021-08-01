@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Nunjucks for..in w/ Map</title>
+  </head>
+  <body>
+    <header>
+      <h1>Nunjucks for..in w/ Map</h1>
+    </header>
+    <article>
+      <p>
+        Looping over a JavaScript
+        <a
+          href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Map"
+          target="_blank"
+          >Map</a
+        >
+        instance behaves similar to an <a href="/object/">Object</a>.
+      </p>
+
+      <h2>INPUT</h2>
+      <pre>
+Map(3) {
+  &#39;name&#39; =&gt; &#39;Eleventy&#39;,
+  &#39;version&#39; =&gt; &#39;1.2.3&#39;,
+  &#39;author&#39; =&gt; &#39;zachleat&#39;
+}</pre
+      >
+
+      <h2>OUTPUT</h2>
+      <ul>
+        <li>name => Eleventy</li>
+        <li>version => 1.2.3</li>
+        <li>author => zachleat</li>
+      </ul>
+    </article>
+  </body>
+</html>
